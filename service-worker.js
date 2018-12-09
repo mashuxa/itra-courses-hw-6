@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/itra-courses-hw-6/precache-manifest.97ea6842ceb458a586608921bc746e42.js"
+  "/itra-courses-hw-6/precache-manifest.6632640404d8b24b6c992ef467c78d9f.js"
 );
 
 workbox.clientsClaim();
