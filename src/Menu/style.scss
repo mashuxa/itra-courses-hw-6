@@ -1,0 +1,56 @@
+@import "../common/theme";
+@import "../common/mixins";
+
+.menu {
+  @include box-shadow();
+  @include flex-block();
+
+  padding: 0;
+  list-style: none;
+  margin: 0;
+  color: $color-dark;
+  background-color: $color-light;
+
+  &__item {
+    font-size: 16px;
+    line-height: 20px;
+    cursor: pointer;
+    padding: 13px 10px 10px;
+    flex-grow: 1;
+    text-align: center;
+    box-shadow: inset 0 3px 0 0 $color-primary;
+
+    &--current {
+      box-shadow: inset 0 3px 0 0 $color-success,
+      inset -2px 0 2px -1px rgba(0, 0, 0, 0.2),
+      inset 2px 0 2px -1px rgba(0, 0, 0, 0.2);
+      background-color: lighten($color-primary, 60%);
+    }
+
+    &:not(&--current):hover {
+      box-shadow:
+        inset 0 3px 0 0 $color-success;
+    }
+  }
+
+  @media (min-width: $tablet) {
+    padding: 20px 0;
+    flex-direction: column;
+
+    &__item {
+      text-align: left;
+      box-shadow: none;
+      padding: 10px;
+
+      &--current {
+        box-shadow: inset 0 2px 2px -1px rgba(0, 0, 0, 0.2),
+        inset 0 -2px 2px -1px rgba(0, 0, 0, 0.2),
+        inset 3px 0 0 0 $color-success;
+      }
+
+      &:not(&--current):hover {
+          box-shadow: inset 3px 0 0 0 $color-success;
+      }
+    }
+  }
+}
