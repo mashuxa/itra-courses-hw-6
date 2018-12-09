@@ -27,6 +27,7 @@
     border-radius: 50%;
     float: left;
     margin: 10px;
+    text-decoration: none;
   }
 
   &__header {
@@ -36,6 +37,11 @@
     line-height: 30px;
     transition-duration: 0.3s;
     color: $color-secondary;
+  }
+
+  &__header-link {
+    text-decoration: none;
+    display: block;
   }
 
   &__link {
@@ -60,7 +66,6 @@
       width: 0;
       height: 0;
       border-top: 1px solid $color-success;
-      //background-color: $color-success;
     }
 
     &:before {

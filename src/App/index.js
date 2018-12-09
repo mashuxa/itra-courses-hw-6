@@ -45,14 +45,12 @@ class App extends Component {
   render() {
     return (
       <React.Fragment>
-        <div className="container">
           <aside className='sidebar'>
             <Menu onClickTab={this.getArticles} currentCategory={this.state.categoryID}/>
           </aside>
           <main className='main'>
             {this.state.articles}
           </main>
-        </div>
       </React.Fragment>
     );
   }
