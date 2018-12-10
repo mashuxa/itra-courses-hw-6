@@ -3,7 +3,6 @@
 
 .menu {
   @include box-shadow();
-  @include flex-block();
 
   padding: 0;
   list-style: none;
@@ -12,6 +11,8 @@
   background-color: $color-light;
 
   &__item {
+    transition-duration: 0.3s;
+    user-select: none;
     font-size: 16px;
     line-height: 20px;
     cursor: pointer;
@@ -21,15 +22,24 @@
     box-shadow: inset 0 3px 0 0 $color-primary;
 
     &--current {
-      box-shadow: inset 0 3px 0 0 $color-success,
-      inset -2px 0 2px -1px rgba(0, 0, 0, 0.2),
-      inset 2px 0 2px -1px rgba(0, 0, 0, 0.2);
+      box-shadow: inset 0 3px 0 0 $color-success;
       background-color: lighten($color-primary, 60%);
     }
 
     &:not(&--current):hover {
-      box-shadow:
-        inset 0 3px 0 0 $color-success;
+      box-shadow: inset 0 3px 0 0 $color-success;
+    }
+  }
+
+  @media (min-width: $mobile-l) {
+    @include flex-block();
+
+    &__item {
+      &--current {
+        box-shadow: inset 0 3px 0 0 $color-success,
+        inset -2px 0 2px -1px rgba(0, 0, 0, 0.2),
+        inset 2px 0 2px -1px rgba(0, 0, 0, 0.2);
+      }
     }
   }
 
