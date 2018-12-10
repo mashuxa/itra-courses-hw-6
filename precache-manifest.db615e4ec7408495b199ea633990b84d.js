@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "3883d5d1930167995ce2",
-    "url": "/itra-courses-hw-6/static/css/main.9c309b26.chunk.css"
+    "revision": "f9978684a713861e729e",
+    "url": "/itra-courses-hw-6/static/css/main.f2a8ce36.chunk.css"
   },
   {
-    "revision": "3883d5d1930167995ce2",
-    "url": "/itra-courses-hw-6/static/js/main.3883d5d1.chunk.js"
+    "revision": "f9978684a713861e729e",
+    "url": "/itra-courses-hw-6/static/js/main.f9978684.chunk.js"
   },
   {
     "revision": "6c11b8ae9efacecd91af",
@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "/itra-courses-hw-6/static/js/runtime~main.3d7c505c.js"
   },
   {
-    "revision": "58b6c7927a708121cf29d5af10954f29",
+    "revision": "91ae3a0abb3ee1934a1d451d782f400b",
     "url": "/itra-courses-hw-6/index.html"
   }
 ];
